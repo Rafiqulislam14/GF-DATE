@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Go On A Date With Me? 💖</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="style.js"></script></head>
+<body>
+    <div class="container">
+        <div id="step-1">
+            <img src="MUNI.jpeg" alt="Cute GIRL" class="muni-img">
+            <h2>Will you go on a date with me MUNI ? 🌸</h2>
+            <div class="btn-group" style="height: 50px;">
+                <button class="btn-yes" onclick="nextStep(2)">YES 💖</button>
+                <button class="btn-no" id="btn-no" onmouseover="moveNoButton()" onclick="moveNoButton()">NO 🙄</button>
+            </div>
+        </div>
+
+        <div id="step-2" class="hidden">
+            <h2>WAIT YOU ACTUALLY SAID YES?? 😭</h2>
+            <p>I was so ready for you to say no 🤪</p>
+            <br>
+            <button class="btn-yes" onclick="nextStep(3)">okay okay! →</button>
+        </div>
+
+        <div id="step-3" class="hidden">
+             <h2>So... when are you free? 📅</h2>
+            <p>Pick a Day</p>
+
+            <input type="date" id="date-input" value="2026-10-14">
+
+            <p style="margin-top: 15px;">What Time?</p>
+            <select id="time-input">
+                <option value="10:00 PM">6:00 PM</option>
+                <option value="6:30 PM">6:30 PM</option>
+                <option value="7:00 PM">7:00 PM</option>
+                <option value="7:30 PM">7:30 PM</option>
+            </select>
+             <br><br>
+            <button class="btn-yes" onclick="nextStep(4)">set the date! ♥</button>
+        </div>
+        <div id="step-4" class="hidden">
+            <h2>What are we feeling? 💅✨</h2>
+            <p>Pick your vibe</p>
+            <div class="food-grid">
+                <div class="food-card" onclick="selectFood(this)">🍕 Pizza 17IC</div>
+                <div class="food-card" onclick="selectFood(this)"> SET MENU - PUNIMA </div>
+            </div>
+            <br>
+            <button class="btn-yes" onclick="nextStep(5)">confirm ➔</button>
+        </div>
+        <div id="step-5" class="hidden">
+            <h2>Yay! It's a Date! 🎉</h2>
+            <p>glad you didn't say no. be ready by 6, I'm coming to get you 🏎️</p>
+            <p style="font-size: 11px; color: #888; margin-top: 10px;">P.S. normal people text. I made a website to flex. absolutely worth it, for you. 💅✨</p>
+            <hr style="margin: 20px 0; border: 0; border-top: 1px solid #eee;">
+            <p style="font-weight: 600; color: #d81b60;">One Small Fee: Date Agreement 📜 TK-500 </p>
+            <p style="font-size: 11px;">one-time fee - non-refundable - absolutely worth it</p>
+            <br>
+            <button class="btn-yes" onclick="alert('Yay! Date confirmed! ❤️')">pay 500TK & confirm 💳</button>
+        </div>
+
+    </div>
+
+</body>
+</html>
